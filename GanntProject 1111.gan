@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="gantt2 Gantt Project" company="" webLink="http://" view-date="2024-11-26" view-index="1" gantt-divider-location="351" resource-divider-location="300" version="3.3.3312" locale="en_US">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Name" width="200" order="0"/>
+        <field id="tpd4" name="Begin date" width="75" order="1"/>
+        <field id="tpd5" name="End date" width="75" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <timeline><![CDATA[4,1,2,3,5]]></timeline>
+        <option id="color.recent"><![CDATA[#000000 #00ffff #0033cc #0066cc #00ccff #003333 #ff3333 #ff6666]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="199" order="0"/>
+        <field id="1" name="Default role" width="82" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="66e488cef3fc442787c53dafe0e171d0" name="1) Planning" color="#00ffff" meeting="false" start="2024-11-28" duration="22" complete="0" thirdDate="2024-11-28" thirdDate-constraint="1" expand="false">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+            <task id="1" uid="f425bc7ee5b740a1bd05080cbb38f22f" name="1.1) Developing chatter" color="#000000" meeting="false" start="2024-11-28" duration="5" complete="0" thirdDate="2024-11-28" thirdDate-constraint="1" expand="true">
+                <depend id="2" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2" uid="ba99dc9bc9a74e138e529bea5aafc3a1" name="1.2)Recruitment and collection of materials" color="#000000" meeting="false" start="2024-12-05" duration="15" complete="0" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" uid="ff3fb4da369d4d53b768989f612baf85" name="1.3Feasibility studies" color="#000000" meeting="true" start="2024-12-26" duration="0" complete="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" uid="c978457adf6a4243bc72b2d4a328f633" name="1.4) Approval" color="#000000" meeting="false" start="2024-12-26" duration="1" complete="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" uid="29a55eaa3f904f8bb15070595efe54ba" name="1.5) Launching" color="#000000" meeting="false" start="2024-12-27" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="6" uid="9958c477f1a14088bed93c96ceca4353" name="2) Requirement Engineering" color="#00ffff" meeting="false" start="2025-01-02" duration="21" complete="0" expand="false">
+            <task id="7" uid="b81a81378dca4a50bf22696ecd482cd7" name="2.1) Developing Requirement Tools" color="#000000" meeting="false" start="2025-01-02" duration="5" complete="0" expand="true">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" uid="0af47bfa31b04ce4814d6a6b7e2a3508" name="2.2) Gathering Requirements" color="#000000" meeting="false" start="2025-01-09" duration="6" complete="0" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" uid="09dc6f55738645b6af4d9f9077212953" name="2.3) Requirement  Analysis" color="#000000" meeting="false" start="2025-01-17" duration="5" complete="0" expand="false">
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+                <task id="10" uid="3beeaf8dd73e418099dc16f7f99038e9" name="2.3.1) Document the user requirements" color="#0033cc" meeting="false" start="2025-01-17" duration="3" complete="0" expand="true"/>
+                <task id="11" uid="a20319008932409badef193ba4793c0f" name="2.3.2) Develop system requirements" color="#0033cc" meeting="false" start="2025-01-17" duration="5" complete="0" expand="true"/>
+                <task id="12" uid="e5ee083edb0040a481b29713cf264728" name="2.3.3) Document the system requirements" color="#0033cc" meeting="false" start="2025-01-17" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="13" uid="7ae7bb5e44f24f11bfc1d1b6ef8f570c" name="2.4) Requirements elicitation" color="#000000" meeting="false" start="2025-01-24" duration="3" complete="0" expand="false">
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+                <task id="14" uid="522892763fea4f30b5a8017594a14f5f" name="2.4.1) Presentation and modifications" color="#0033cc" meeting="false" start="2025-01-24" duration="3" complete="0" expand="true"/>
+            </task>
+            <task id="15" uid="e601687dab0e4e8da1cde71f2be73934" name="2.5) Approval" color="#00ffff" meeting="false" start="2025-01-29" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="16" uid="70dfdc1b8a274a8cabc47fc31cdd441d" name="3) Design" color="#00ffff" meeting="false" start="2024-11-28" duration="3" complete="0" expand="false">
+            <depend id="20" type="2" difference="0" hardness="Strong"/>
+            <depend id="24" type="2" difference="0" hardness="Strong"/>
+            <task id="17" uid="9819b3d71bd84964afe5f08746a41d1a" name="3.1) UI/UX" color="#000000" meeting="false" start="2024-11-28" duration="2" complete="0" expand="true"/>
+            <task id="18" uid="450f23a2878d4eeb897f5b64760c87d5" name="3.2) Database" color="#000000" meeting="false" start="2024-11-28" duration="3" complete="0" expand="true"/>
+            <task id="19" uid="906ca0abd5114219ac27417d79cc5c7a" name="3.3) UML" color="#000000" meeting="false" start="2024-11-28" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="20" uid="b91a876ae8564302bc998f917ff06f11" name="4) Developement" color="#00ffff" meeting="false" start="2024-12-03" duration="4" complete="0" expand="false">
+            <depend id="24" type="2" difference="0" hardness="Strong"/>
+            <depend id="34" type="2" difference="0" hardness="Strong"/>
+            <task id="21" uid="dd3b42c32b24456bada6ff7aebb7dd3c" name="4.1)  Frontend" color="#000000" meeting="false" start="2024-12-03" duration="3" complete="0" expand="true"/>
+            <task id="22" uid="f780830983004b8e9846d778931a3d5b" name="4.2) Backend" color="#000000" meeting="false" start="2024-12-03" duration="4" complete="0" expand="true"/>
+            <task id="23" uid="22100f56874349b9b0c107a4f1a261e8" name="4.3) Datascript" color="#000000" meeting="false" start="2024-12-03" duration="4" complete="0" expand="true"/>
+        </task>
+        <task id="24" uid="1389864e0e674daca47a9774ef7ddf04" name="5) Testing and Vaidation" color="#00ffff" meeting="false" start="2024-12-09" duration="4" complete="0" expand="false">
+            <depend id="34" type="2" difference="0" hardness="Strong"/>
+            <task id="25" uid="b7638e9c9dcb434891d0a9057d291ca4" name="5.1) Unit testing" color="#000000" meeting="false" start="2024-12-09" duration="2" complete="0" expand="true"/>
+            <task id="26" uid="d7069d1e968a46b3ae39b4497eec97c7" name="5.2) Blackbox Testing" color="#000000" meeting="false" start="2024-12-09" duration="3" complete="0" expand="true"/>
+            <task id="27" uid="5ed1a3dd631945999b87d95ae2d14eca" name="5.3)Functional Testing" color="#000000" meeting="false" start="2024-12-09" duration="1" complete="0" expand="true"/>
+            <task id="28" uid="9038bffcfb034908a0d839ab32f09ac1" name="5.4) Beta Testing" color="#000000" meeting="false" start="2024-12-09" duration="4" complete="0" expand="true"/>
+        </task>
+        <task id="29" uid="eea1646de322489496af3847ac7f9893" name="6) Deployment" color="#00ffff" meeting="false" start="2024-11-28" duration="3" complete="0" expand="false">
+            <depend id="34" type="2" difference="0" hardness="Strong"/>
+            <task id="30" uid="137424e1e9974ceebf255ed5a1d9ab5a" name="6.1) Server installation" color="#000000" meeting="false" start="2024-11-28" duration="2" complete="0" expand="true"/>
+            <task id="31" uid="ecf70ac254114859aef2780869b1c772" name="6.2) Server configuration" color="#000000" meeting="false" start="2024-11-28" duration="2" complete="0" expand="true"/>
+            <task id="32" uid="e8b5c03b5a174a49afcb77a87f30cb33" name="6.3) Application installation and verification" color="#000000" meeting="false" start="2024-11-28" duration="3" complete="0" expand="true"/>
+            <task id="33" uid="19fd78e7b28c418bbcf93c7d6c42c098" name="6.4Configuration change management" color="#000000" meeting="false" start="2024-11-28" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="34" uid="8315e56405ca4447a7a10e1b23cc74aa" name="7) Closing" color="#00ffff" meeting="false" start="2024-12-13" duration="1" complete="0" expand="false">
+            <task id="35" uid="2a83d0175b924617aafdbace396aa11c" name="7.1) Sign and celebrate" color="#000000" meeting="false" start="2024-12-13" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="36" uid="9e52bf6c05af46e39a35bfbbfba2684e" name="8) Maintenance and support" color="#00ffff" meeting="false" start="2024-11-28" duration="1" complete="0" expand="false">
+            <task id="37" uid="1ac38c5667fe403fb4deefc763ae1101" name="8.1) Negotiations" color="#000000" meeting="false" start="2024-11-28" duration="1" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="RED CLOTINES" function="Default:1" contacts="clotines@gmail.com" phone="675432345">
+            <rate name="standard" value="800"/>
+        </resource>
+        <resource id="1" name="Micheal walkers" function="2" contacts="micheal@gmail.com" phone="672345678">
+            <rate name="standard" value="250"/>
+        </resource>
+        <resource id="2" name="Doe Wilson" function="2" contacts="wilson@gmail.com" phone="679012343">
+            <rate name="standard" value="250"/>
+        </resource>
+        <resource id="3" name="Morgan Chalse" function="2" contacts="chalse@gmail.com" phone="657564321">
+            <rate name="standard" value="250"/>
+        </resource>
+        <resource id="4" name="charlse shibi" function="2" contacts="shibi@gmail.com" phone="653432189">
+            <rate name="standard" value="250"/>
+        </resource>
+        <resource id="5" name="Morine Philipe" function="2" contacts="philipe@mail.com" phone="656782341">
+            <rate name="standard" value="250"/>
+        </resource>
+        <resource id="6" name="Thoe Wah" function="1" contacts="wah@gmail.com" phone="657981241">
+            <rate name="standard" value="380"/>
+        </resource>
+        <resource id="7" name="MIky James" function="1" contacts="james@gmail" phone="658980041">
+            <rate name="standard" value="350"/>
+        </resource>
+        <resource id="8" name="Micheal Walker" function="1" contacts="micheal@mail.com" phone="672345678">
+            <rate name="standard" value="350"/>
+        </resource>
+        <resource id="9" name="Jone statam" function="1" contacts="statam@gmail.com" phone="657876754">
+            <rate name="standard" value="350"/>
+        </resource>
+        <resource id="10" name="Monica" function="1" contacts="monica@gmail.com" phone="697876542">
+            <rate name="standard" value="350"/>
+        </resource>
+        <resource id="11" name="Paul Allen" function="1" contacts="allen@gmail.com" phone="6998764320">
+            <rate name="standard" value="350"/>
+        </resource>
+        <resource id="12" name="Emily Rones" function="1" contacts="rones@mail.com" phone="690213481">
+            <rate name="standard" value="350"/>
+        </resource>
+        <resource id="13" name="Rose Faline" function="1" contacts="faline@gmail.com" phone="673240981">
+            <rate name="standard" value="350"/>
+        </resource>
+        <resource id="14" name="Moose Gobbin" function="1" contacts="gobbin@gmail.com" phone="671210099">
+            <rate name="standard" value="350"/>
+        </resource>
+        <resource id="15" name="Glory Grace" function="1" contacts="grace@gmail.com" phone="652213453">
+            <rate name="standard" value="350"/>
+        </resource>
+        <resource id="16" name="Bryant" function="3" contacts="bryant@gmail.com" phone="654362111">
+            <rate name="standard" value="480"/>
+        </resource>
+        <resource id="18" name="Red Clotines" function="4" contacts="clotines@gmail.com" phone="675432345">
+            <rate name="standard" value="750"/>
+        </resource>
+        <resource id="19" name="Doe Wilson" function="5" contacts="wwilson@gmail.com" phone="679012343">
+            <rate name="standard" value="550"/>
+        </resource>
+        <resource id="20" name="Nikel loiuse" function="5" contacts="nikel@gmail.com" phone="643321256">
+            <rate name="standard" value="550"/>
+        </resource>
+        <resource id="21" name="Micheal Alot" function="5" contacts="alot@gmail.com" phone="6745321200">
+            <rate name="standard" value="550"/>
+        </resource>
+        <resource id="22" name="jullie monn" function="5" contacts="monn@gmail.com" phone="778213409">
+            <rate name="standard" value="550"/>
+        </resource>
+        <resource id="23" name="Prose lorin" function="5" contacts="lorin@gmmail.com" phone="541234211">
+            <rate name="standard" value="550"/>
+        </resource>
+        <resource id="24" name="Jone cobi" function="5" contacts="cobi@g,ail.com" phone="654321888">
+            <rate name="standard" value="550"/>
+        </resource>
+        <resource id="25" name="cobi joy" function="5" contacts="jot@gmail.com" phone="6543732109">
+            <rate name="standard" value="550"/>
+        </resource>
+        <resource id="26" name="Monica roil" function="5" contacts="roil@gmail.com" phone="6543290008">
+            <rate name="standard" value="550"/>
+        </resource>
+        <resource id="27" name="Boyce moose" function="5" contacts="moose@gmail.com" phone="673737421">
+            <rate name="standard" value="550"/>
+        </resource>
+        <resource id="28" name="Johnson livermore" function="5" contacts="livermor@gmail.com" phone="672112132">
+            <rate name="standard" value="550"/>
+        </resource>
+        <resource id="29" name="chuk collins" function="6" contacts="collins@gmail.com" phone="677782132">
+            <rate name="standard" value="480"/>
+        </resource>
+        <resource id="30" name="morish line" function="6" contacts="morish@gmail.com" phone="655432221">
+            <rate name="standard" value="480"/>
+        </resource>
+        <resource id="31" name="marie lon" function="8" contacts="lon@gmail.com" phone="65432132">
+            <rate name="standard" value="300"/>
+        </resource>
+        <resource id="32" name="s" function="8" contacts="frida@gmail.com" phone="26547789002">
+            <rate name="standard" value="300"/>
+        </resource>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="2" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="3" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="4" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="5" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="6" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="7" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="8" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="9" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="10" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="11" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="12" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="13" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="14" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="17" resource-id="15" function="1" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="16" function="3" responsible="false" load="100.0"/>
+        <allocation task-id="20" resource-id="18" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="0" resource-id="18" function="4" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="19" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="20" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="21" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="22" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="23" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="24" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="25" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="26" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="27" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="28" function="5" responsible="false" load="100.0"/>
+        <allocation task-id="29" resource-id="29" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="29" resource-id="30" function="6" responsible="false" load="100.0"/>
+        <allocation task-id="24" resource-id="31" function="8" responsible="false" load="100.0"/>
+        <allocation task-id="24" resource-id="32" function="8" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="0"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="0"/>
+        <vacation start="2024-12-14" end="2024-12-16" resourceid="0"/>
+        <vacation start="2024-12-21" end="2024-12-23" resourceid="0"/>
+        <vacation start="2024-12-28" end="2024-12-30" resourceid="0"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="1"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="2"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="2"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="3"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="3"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="4"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="4"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="5"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="6"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="7"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="8"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="9"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="10"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="11"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="12"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="13"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="14"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="15"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="16"/>
+        <vacation start="2024-11-30" end="2024-12-02" resourceid="19"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="19"/>
+        <vacation start="2024-12-14" end="2024-12-16" resourceid="19"/>
+        <vacation start="2024-12-21" end="2024-12-23" resourceid="19"/>
+        <vacation start="2024-12-28" end="2024-12-30" resourceid="19"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="21"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="22"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="23"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="24"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="25"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="26"/>
+        <vacation start="2024-12-07" end="2024-12-09" resourceid="28"/>
+        <vacation start="2025-02-01" end="2025-02-10" resourceid="29"/>
+        <vacation start="2025-02-08" end="2025-02-10" resourceid="30"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="UI//UX Developer"/>
+        <role id="2" name="Graphic Designer"/>
+        <role id="3" name="Data base Developer"/>
+        <role id="4" name="Software Developer(full stack)"/>
+        <role id="5" name="Backend Developer"/>
+        <role id="6" name="Network and Cloud engineer"/>
+        <role id="7" name="Graphic Designer"/>
+        <role id="8" name="Testers"/>
+    </roles>
+</project>
